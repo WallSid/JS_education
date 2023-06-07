@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Task5</title>
+</head>
+    <body>
+
+        <div class="container">
+            <p>Задача 5. Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+            </p>
+            
+            <script>
+                let secNum = parseFloat(prompt("Скільки секунд від початку доби?"));
+
+                let minutes = secNum / 60;
+                let hours = secNum / 3600;
+            
+                document.write(`Хвилин - ${minutes.toFixed(2)} <br> 
+                Годин - ${hours.toFixed(2)}`);
+            </script>
+        </div>
+
+    </body>
+</html>

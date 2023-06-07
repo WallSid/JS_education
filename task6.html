@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Task5</title>
+</head>
+    <body>
+
+        <div class="container">
+            <p>Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+            </p>
+            
+            <script>
+                let priceProduct1 = parseFloat(prompt("Ціна товару №1?"));
+                let countProduct1 = parseInt(prompt("Кількість товару №1?"));
+
+                let priceProduct2 = parseFloat(prompt("Ціна товару №2?"));
+                let countProduct2 = parseInt(prompt("Кількість товару №2?"));
+
+                let priceProduct3 = parseFloat(prompt("Ціна  товару №3?"));
+                let countProduct3 = parseInt(prompt("Кількість товару №3?"));
+
+                let totalPriceProduct1 = priceProduct1 * countProduct1;
+                let totalPriceProduct2 = priceProduct2 * countProduct2;
+                let totalPriceProduct3 = priceProduct3 * countProduct3;
+
+                let totalPrice = totalPriceProduct1 + totalPriceProduct2 + totalPriceProduct3;
+            
+                document.write(
+                    `<h1>Receipt</h1>
+                    <div class="receipt-body">
+                        <div class="receipt-items">
+                            <div class="receipt-item">
+                                <span>Product1</span>${countProduct1}<span></span><span>${totalPriceProduct1}</span> <br>
+                                <span>Product2</span>${countProduct2}<span></span><span>${totalPriceProduct2}</span> <br>
+                                <span>Product3</span>${countProduct3}<span></span><span>${totalPriceProduct3}</span>
+                            </div>
+                            <div class="totalPrice">
+                                Total: ${totalPrice}
+                            </div>
+                        </div>
+                    </div>
+                
+                    `
+                )
+            </script>
+
+            
+            
+        </div>
+
+    </body>
+</html>

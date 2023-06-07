@@ -1,0 +1,56 @@
+body {
+    background-color: #cdf1ed;
+}
+
+.task-link {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+
+
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.task {
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease 0s;
+}
+
+.task:hover {
+    background-color: aquamarine;
+}
+
+tr, th, td {
+    border: 1px solid black;
+}
+
+span {
+    margin: 0 20px;
+}
+
+.totalPrice {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.receipt-body {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 20px;
+}
