@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task1</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>5. З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+
+        </p>
+
+        <script>  
+            let driveCategory = prompt("Яка категорія?");
+
+            switch (driveCategory) {
+                case "C" : alert("Можете водити вантажівку.")
+                    break;
+                case "A" : alert("Можете водити мотоцикл.")
+                    break;
+                case "B" : alert("Можете водити легковий автомобіль.")
+                    break;
+                default : alert("Невідома категорія");
+                    break;
+            }
+        </script>
+    </div>
+
+</body>
+</html>
