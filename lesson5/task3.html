@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task3</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Задача 11. Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами. 
+        </p>
+
+        <script>
+            const minNumber = parseInt(prompt('Число від(включно)?'))
+            const maxNumber = parseInt(prompt('Число до(включно)?'))
+            let oddSum = 0;
+            let oddNumberIndex = 1;
+
+            for (let rangeNumber = minNumber; rangeNumber <= maxNumber && oddNumberIndex <= 5; rangeNumber++) {
+
+                    if (rangeNumber%2 !== 0) {
+                        oddSum += rangeNumber
+                        oddNumberIndex++
+                    } 
+                }
+                
+            document.write(`Сума непарних чисел = ${oddSum}`)
+        </script>
+    </div>
+
+</body>
+</html>

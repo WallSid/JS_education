@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task5</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Задача 15. Користувача поступово вводить показники температури протягом року. Знайти середню температуру.
+            Вводити буде раз на місяць xD....
+        </p>
+
+        <script>  
+            let sumOfAllIndicators = 0;
+
+            for (let i = 0; i < 12; i++) {
+            const tempForCurrentMonth = parseInt(prompt("Яка середня температура за цей місяць?"));
+            sumOfAllIndicators += tempForCurrentMonth;
+            }
+
+            let avarageTemp = sumOfAllIndicators / 12;
+
+            document.write(`Середня температура за рік складає: ${avarageTemp}`);
+
+        </script>
+    </div>
+
+</body>
+</html>

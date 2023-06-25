@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task4</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Задача 12. Ігровий автомат. Випадково вибираємо зображення у 3 позиціях. Вибір у кожній позиції вибирається як одне з чотирьох зображень. Вивести ці зображення і повідомити виграш користувача (три перших зображення 100 грн, три других – 200, три третіх – 500, три четвертих зображення – 1000грн). Використати цикли і switch (для вибору зображення за номером).
+        </p>
+
+
+        <script>
+
+        const minNumber = 1;
+        const maxNumber = 4;
+
+        let result = 0;
+        let firstRandomImg, secondRandomImg, thirdRandomImg;
+
+        for (let i = 0; i < 3; i++) {
+        const randomImg = minNumber + Math.floor(Math.random() * (maxNumber - minNumber + 1));
+
+        switch (i) {
+            case 0:
+            firstRandomImg = randomImg;
+            document.write(`<span style="margin: 20px;"><img src="../img/slots/${randomImg}.png" alt=""></span>`);
+            break;
+            case 1:
+            secondRandomImg = randomImg;
+            document.write(`<span style="margin: 20px;"><img src="../img/slots/${randomImg}.png" alt=""></span>`);
+            break;
+            case 2:
+            thirdRandomImg = randomImg;
+            document.write(`<span style="margin: 20px;"><img src="../img/slots/${randomImg}.png" alt=""></span>`);
+            break;
+        }
+        }
+
+        let score = firstRandomImg + secondRandomImg + thirdRandomImg;
+
+        switch (score) {
+        case 3:
+            result += 100;
+            break;
+        case 6:
+            result += 200;
+            break;
+        case 9:
+            result += 500;
+            break;
+        case 12:
+            result += 1000;
+            break;
+        }
+
+        if (result > 0) {
+        document.write(`<br> Ваш виграш: ${result} грн`);
+        } else {
+        document.write(`<br> Спробуйте ще...`);
+        }
+
+        </script>
+    </div>
+
+</body>
+</html>

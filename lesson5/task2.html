@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task2</title>
+</head>
+<body>
+
+    <div class="container">
+        <div style="margin-bottom: 50px;">
+            <p>Задача 6. Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній) за зразком
+            </p>
+            <img src="../img/tablesExample.png" alt="">
+        </div>
+
+
+        <script>
+            let cellContentNumber = 1
+
+            for (let tableNumber = 0; tableNumber < 3; tableNumber++) {
+                document.write(`<table style="display: inline-block; margin-right: 30px">`)
+                
+            
+                for (let rowsNumber = 0; rowsNumber < 3; rowsNumber++) {
+
+                    document.write(`<tr>`)
+
+                        for (let cellNumber = 0; cellNumber < 3; cellNumber++) {
+                            document.write(`<td>${cellContentNumber++}</td>`)
+                        }
+
+                    document.write(`</tr>`)
+                }
+
+                document.write(`</table>`)
+            }
+        </script>
+    </div>
+
+</body>
+</html>
