@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task1</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- <p> З клавіатури вводитяться числа поки не буде введено 0. Знайти суму чисел.
+        </p>
+
+        <script>
+
+            let number;
+            let sumNumber = 0;
+            do {
+                number = parseFloat(prompt("Число?"));
+                sumNumber += number;
+            } while (number !== 0);
+            document.write(sumNumber)
+        </script>
+        <p>  З клавіатури поступово вводяться символи поки не буде введено символ «а». Вивести рядок символів у зворотному порядку.
+        </p>
+
+        <script>
+
+            let symbol;
+            let symbols = "";
+            do {
+                symbol = prompt("Symbol?");
+                symbols += symbol;
+            } while (symbol !== 'a');
+            symbols = symbols.split("").reverse().join("");
+            document.write(symbols)
+        </script>
+        <p>  Танчики. На полі з 10 клітинок розміщують танк. За один крок танк може переміщуватися на відстань від 0 до 1 у  будь-якому напрямку (в межах поля). При влучанні броня танка пошкоджується на 30 балів (всього 100). Гра продовжується поки або не закінчаться снаряди (кількість вводиться з клавіатури) або не буде влучання. Спробуйте відоразити гру графічно.
+
+        </p>
+
+        <script>
+            let missleNumber = parseFloat(prompt("How many missles?"))
+
+            let tankRowPosition = 1 + Math.floor(Math.random() * 2);
+            let tanklColumnPosition = 1 + Math.floor(Math.random() * 5);
+
+            let userRow,userColumn, checkHit
+
+            do {
+                symbol = prompt("Symbol?");
+                symbols += symbol;
+            } while (symbol !== 'a');
+            symbols = symbols.split("").reverse().join("");
+            document.write(symbols)
+        </script> -->
+        <p>  З клавіатури вводяться поступово числа. Знайти два найменші числа. Ввід здійснюється до тих пір, поки різниця між такими числами є більшою за 5.
+        </p>
+
+        <script>
+
+
+            let minNumberOne;
+            let minNumberTwo;
+            let trueDifference = minNumberTwo - minNumberOne > 5;
+            do {
+                let numberOne = parseFloat(prompt("Number one?"))
+                let numberTwo = parseFloat(prompt("Number two?"))
+
+                minNumberOne = numberOne;
+                minNumberTwo = numberTwo;
+
+                if (minNumberOne > numberOne) {
+                    minNumberOne = numberOne
+                } if (minNumberTwo > numberTwo) {
+                    minNumberTwo = numberTwo
+                }
+            } while (trueDifference);
+            document.write(minNumberOne,minNumberTwo);
+        </script>
+    </div>
+
+</body>
+</html>
