@@ -62,23 +62,23 @@
         <script>
 
 
-            let minNumberOne;
-            let minNumberTwo;
-            let trueDifference = minNumberTwo - minNumberOne > 5;
+            let minNumberOne = +Infinity;
+            let minNumberTwo = +Infinity;
+
             do {
-                let numberOne = parseFloat(prompt("Number one?"))
-                let numberTwo = parseFloat(prompt("Number two?"))
+                
+                let number = parseFloat(prompt("Enter a number:"));
+                console.log(number);
 
-                minNumberOne = numberOne;
-                minNumberTwo = numberTwo;
-
-                if (minNumberOne > numberOne) {
-                    minNumberOne = numberOne
-                } if (minNumberTwo > numberTwo) {
-                    minNumberTwo = numberTwo
+                if (number < minNumberOne) {
+                    minNumberTwo = minNumberOne;
+                    minNumberOne = number;
+                } else if (number < minNumberTwo) {
+                    minNumberTwo = number;
                 }
-            } while (trueDifference);
-            document.write(minNumberOne,minNumberTwo);
+                
+            } while (Math.abs(minNumberTwo - minNumberOne) > 5);
+            document.write("The two smallest numbers are: ", minNumberOne, " and ", minNumberTwo);
         </script>
     </div>
 
